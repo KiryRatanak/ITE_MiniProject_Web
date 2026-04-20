@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Articles — Khmer History | ខ្មែរ Chronicles</title>
+  <meta name="description"
+    content="Browse all articles on Khmer history — from temple architecture to royal dynasties, ancient agriculture, art, religion, and the modern Cambodian experience." />
+  <meta name="keywords"
+    content="Khmer history articles, Cambodia history blog, Angkor research, Khmer culture essays" />
+  <link rel="canonical" href="https://khmerchronicles.com/articles.html" />
+  <link rel="stylesheet" href="src/output.css" />
+  <link rel="stylesheet" href="src/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Noto+Serif+Khmer:wght@300;400;700;900&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Playfair Display"', "serif"],
+            body: ['"Cormorant Garamond"', "serif"],
+            khmer: ['"Noto Serif Khmer"', "serif"],
+            mono: ['"Space Mono"', "monospace"],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 right-0 z-50 border-b"
+    style="background: rgba(250, 248, 243, 0.88); border-color: var(--border)" id="main-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-9 h-9 flex items-center justify-center" style="background: var(--gold)">
+            <span class="font-khmer text-white text-lg font-bold">ខ</span>
+          </div>
+          <div>
+            <div class="font-display font-bold text-lg leading-none" style="color: var(--text)">
+              ខ្មែរ Chronicles
+            </div>
+            <div class="font-mono text-xs" style="color: var(--muted)">
+              KHMER HISTORY BLOG
+            </div>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-body" style="color: var(--muted)">
+          <a href="index.html" class="hover:opacity-80">Home</a>
+          <a href="history.html" class="hover:opacity-80">History</a>
+          <a href="articles.html" class="font-semibold" style="color: var(--gold)">Articles</a>
+          <a href="timeline.html" class="hover:opacity-80">Timeline</a>
+          <a href="about.html" class="hover:opacity-80">About</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <button id="dark-toggle" aria-label="Toggle dark mode" class="text-xl"
+            style="color: var(--gold); cursor: pointer">
+            <span id="theme-icon">☽</span>
+          </button>
+          <button id="menu-btn" class="md:hidden text-2xl" style="color: var(--text)">
+            ☰
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-nav" class="hidden md:hidden border-t px-4 py-4 space-y-3"
+      style="border-color: var(--border); background: var(--card-bg)">
+      <a href="index.html" class="block font-body text-sm py-1" style="color: var(--text)">Home</a>
+      <a href="history.html" class="block font-body text-sm py-1" style="color: var(--text)">History</a>
+      <a href="articles.html" class="block font-body text-sm py-1" style="color: var(--gold)">Articles</a>
+      <a href="timeline.html" class="block font-body text-sm py-1" style="color: var(--text)">Timeline</a>
+      <a href="about.html" class="block font-body text-sm py-1" style="color: var(--text)">About</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="pt-32 pb-12 px-4 sm:px-6 relative">
+    <div class="max-w-4xl mx-auto hero-in">
+      <span class="badge mb-4 inline-block">48 Articles & Growing</span>
+      <h1 class="font-display text-5xl sm:text-6xl font-bold leading-tight mt-3 mb-4" style="color: var(--text)">
+        All Articles
+      </h1>
+      <p class="font-body text-xl leading-relaxed max-w-2xl" style="color: var(--muted)">
+        Scholarly yet accessible essays on Khmer history, culture,
+        archaeology, and identity — written for the curious reader.
+      </p>
+      <div class="angkor-border mt-8 max-w-md"></div>
+    </div>
+  </section>
+
+  <!-- SEARCH + FILTER BAR -->
+  <section class="px-4 sm:px-6 py-6 border-y sticky top-16 z-40"
+    style="background: var(--bg); border-color: var(--border)">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
+      <div class="flex flex-wrap gap-2">
+        <button class="filter-btn active" onclick="filterArticles('all', this)">
+          All
+        </button>
+        <button class="filter-btn" onclick="filterArticles('architecture', this)">
+          Architecture
+        </button>
+        <button class="filter-btn" onclick="filterArticles('religion', this)">
+          Religion
+        </button>
+        <button class="filter-btn" onclick="filterArticles('rulers', this)">
+          Kings & Rulers
+        </button>
+        <button class="filter-btn" onclick="filterArticles('language', this)">
+          Language & Arts
+        </button>
+        <button class="filter-btn" onclick="filterArticles('modern', this)">
+          Modern
+        </button>
+      </div>
+      <div class="relative w-full sm:w-64">
+        <input type="text" id="search-input" placeholder="Search articles..." onkeyup="searchArticles(this.value)"
+          class="w-full px-4 py-2 text-sm border focus:outline-none font-body" style="
+              background: var(--card-bg);
+              border-color: var(--border);
+              color: var(--text);
+            " />
+        <span class="absolute right-3 top-2.5 text-sm" style="color: var(--muted)">⌕</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLES GRID -->
+  <section class="py-16 px-4 sm:px-6 max-w-7xl mx-auto">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="articles-grid">
+      <!-- Article 1 -->
+      <article class="story-card article-card overflow-hidden reveal" data-cat="rulers">
+        <div class="h-48 relative overflow-hidden" style="background: linear-gradient(135deg, #2d1a00, #5c3000)">
+          <img src="images/jayavarmanII.png" alt="Jayavarman II" class="w-full h-full object-cover" />
+          <span class="badge absolute top-3 left-3" style="
+                background: rgba(0, 0, 0, 0.4);
+                border-color: rgba(247, 188, 31, 0.5);
+                color: rgba(247, 188, 31, 0.9);
+              ">Kings & Rulers</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-lg font-bold mb-2 leading-tight" style="color: var(--text)">
+            Jayavarman II: The Founder King of Angkor
+          </h3>
+          <p class="font-body text-sm leading-relaxed mb-4" style="color: var(--muted)">
+            How a young prince from Java united the Khmer-speaking tribes and
+            declared himself a living god in 802 AD, launching the greatest
+            empire in Southeast Asian history.
+          </p>
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-xs" style="color: var(--muted)">OCT 12, 2024 · 12 MIN</span>
+            <a href="history.html#angkor" class="font-mono text-xs font-bold" style="color: var(--gold)">Read →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="story-card article-card overflow-hidden reveal" data-cat="architecture"
+        style="transition-delay: 0.05s">
+        <div class="h-48 relative overflow-hidden" style="background: linear-gradient(135deg, #1a1a00, #3a3a00)">
+          <img src="images/angkorwat.png" alt="Angkor Wat" class="w-full h-full object-cover opacity-70" />
+          <span class="badge absolute top-3 left-3" style="
+                background: rgba(0, 0, 0, 0.4);
+                border-color: rgba(247, 188, 31, 0.5);
+                color: rgba(247, 188, 31, 0.9);
+              ">Architecture</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-lg font-bold mb-2 leading-tight" style="color: var(--text)">
+            Angkor Wat: A Temple that Mapped the Cosmos
+          </h3>
+          <p class="font-body text-sm leading-relaxed mb-4" style="color: var(--muted)">
+            Angkor Wat's orientation, proportions, and bas-reliefs encode the
+            Hindu cosmos, royal mythology, and astronomical calendars. Here's
+            how to read the world's largest temple.
+          </p>
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-xs" style="color: var(--muted)">NOV 3, 2024 · 15 MIN</span>
+            <a href="history.html#angkor" class="font-mono text-xs font-bold" style="color: var(--gold)">Read →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="story-card article-card overflow-hidden reveal" data-cat="religion"
+        style="transition-delay: 0.1s">
+        <div class="h-48 relative overflow-hidden" style="background: linear-gradient(135deg, #001a1a, #003a3a)">
+          <img src="images/devaraja.png" alt="devaraja cult illustration"
+            class="w-full h-full object-cover opacity-70" />
+          <span class="badge absolute top-3 left-3" style="
+                background: rgba(0, 0, 0, 0.4);
+                border-color: rgba(247, 188, 31, 0.5);
+                color: rgba(247, 188, 31, 0.9);
+              ">Religion</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-lg font-bold mb-2 leading-tight" style="color: var(--text)">
+            The Devaraja Cult: When Kings Became Gods
+          </h3>
+          <p class="font-body text-sm leading-relaxed mb-4" style="color: var(--muted)">
+            The devaraja (god-king) concept fused Hindu cosmology with Khmer
+            political authority, creating a system where the king's legitimacy
+            depended on his identification with Shiva.
+          </p>
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-xs" style="color: var(--muted)">OCT 28, 2024 · 10 MIN</span>
+            <a href="history.html#angkor" class="font-mono text-xs font-bold" style="color: var(--gold)">Read →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Article 4 -->
+      <article class="story-card article-card overflow-hidden reveal" data-cat="language"
+        style="transition-delay: 0.05s">
+        <div class="h-48 relative overflow-hidden" style="background: linear-gradient(135deg, #0f1a0f, #1a3a1a)">
+          <img src="images/khmerScript.png" alt="khmer script illustration" />
+          <span class="badge absolute top-3 left-3" style="
+                background: rgba(0, 0, 0, 0.4);
+                border-color: rgba(247, 188, 31, 0.5);
+                color: rgba(247, 188, 31, 0.9);
+              ">Language & Arts</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-lg font-bold mb-2 leading-tight" style="color: var(--text)">
+            Old Khmer Script: Decoding Southeast Asia's Oldest Writing
+          </h3>
+          <p class="font-body text-sm leading-relaxed mb-4" style="color: var(--muted)">
+            The 611 AD inscription from Angkor Borei is the oldest dated Khmer
+            text. Linguists trace the evolution from Old to Middle to Modern
+            Khmer across 1,400 years of stone-carved literature.
+          </p>
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-xs" style="color: var(--muted)">OCT 15, 2024 · 9 MIN</span>
+            <a href="history.html#pre-angkor" class="font-mono text-xs font-bold" style="color: var(--gold)">Read →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Article 5 -->
+      <article class="story-card article-card overflow-hidden reveal" data-cat="architecture"
+        style="transition-delay: 0.1s">
+        <div class="h-48 relative overflow-hidden" style="background: linear-gradient(135deg, #1a0f1a, #3a003a)">
+          <img src="images/bayon.png" alt="The Bayon" class="w-full h-full object-cover opacity-70" />
+          <span class="badge absolute top-3 left-3" style="
+                background: rgba(0, 0, 0, 0.4);
+                border-color: rgba(247, 188, 31, 0.5);
+                color: rgba(247, 188, 31, 0.9);
+              ">Architecture</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-lg font-bold mb-2 leading-tight" style="color: var(--text)">
+            The Bayon's 216 Faces: Mystery of the Smiling King
+          </h3>
+          <p class="font-body text-sm leading-relaxed mb-4" style="color: var(--muted)">
+            Jayavarman VII's state temple Bayon features 54 towers, each
+            adorned with four giant faces. Are they the king? Avalokitesvara?
+            Or both? The debate continues today.
+          </p>
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-xs" style="color: var(--muted)">SEP 20, 2024 · 8 MIN</span>
+            <a href="history.html#angkor" class="font-mono text-xs font-bold" style="color: var(--gold)">Read →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Article 6 -->
+      <article class="story-card article-card overflow-hidden reveal" data-cat="modern" style="transition-delay: 0.15s">
+        <div class="h-48 relative overflow-hidden" style="background: linear-gradient(135deg, #001a00, #003300)">
+          <img src="images/khmerRouge.png" alt="Khmer Rouge Tribunals" />
+          <span class="badge absolute top-3 left-3" style="
+                background: rgba(0, 0, 0, 0.4);
+                border-color: rgba(247, 188, 31, 0.5);
+                color: rgba(247, 188, 31, 0.9);
+              ">Modern</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-lg font-bold mb-2 leading-tight" style="color: var(--text)">
+            The Khmer Rouge Tribunals: Justice After Genocide
+          </h3>
+          <p class="font-body text-sm leading-relaxed mb-4" style="color: var(--muted)">
+            After more than 30 years of legal proceedings, the ECCC issued
+            landmark convictions for genocide in 2018. A documentation of the
+            long road to justice and the victims still waiting to be named.
+          </p>
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-xs" style="color: var(--muted)">SEP 5, 2024 · 14 MIN</span>
+            <a href="history.html#independence" class="font-mono text-xs font-bold" style="color: var(--gold)">Read
+              →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Article 7 -->
+      <article class="story-card article-card overflow-hidden reveal" data-cat="rulers">
+        <div class="h-48 relative overflow-hidden" style="background: linear-gradient(135deg, #1a1a0f, #3a3a00)">
+          <img src="images/suryavarmanII.png" alt="Suryavarman II" />
+          <span class="badge absolute top-3 left-3" style="
+                background: rgba(0, 0, 0, 0.4);
+                border-color: rgba(247, 188, 31, 0.5);
+                color: rgba(247, 188, 31, 0.9);
+              ">Kings & Rulers</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-lg font-bold mb-2 leading-tight" style="color: var(--text)">
+            Suryavarman II: The King Who Built Heaven on Earth
+          </h3>
+          <p class="font-body text-sm leading-relaxed mb-4" style="color: var(--muted)">
+            An ambitious military commander who seized the throne, extended
+            the empire to unprecedented size, and dedicated 30 years to
+            building Angkor Wat as his own funeral temple and cosmic center.
+          </p>
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-xs" style="color: var(--muted)">AUG 18, 2024 · 11 MIN</span>
+            <a href="history.html#angkor" class="font-mono text-xs font-bold" style="color: var(--gold)">Read →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Article 8 -->
+      <article class="story-card article-card overflow-hidden reveal" data-cat="language"
+        style="transition-delay: 0.05s">
+        <div class="h-48 relative overflow-hidden" style="background: linear-gradient(135deg, #1a000f, #3a0020)">
+          <img src="images/classicalkhmerdance.png" alt="Classical Khmer Dance"
+            class="w-full h-full object-cover opacity-70" />
+          <span class="badge absolute top-3 left-3" style="
+                background: rgba(0, 0, 0, 0.4);
+                border-color: rgba(247, 188, 31, 0.5);
+                color: rgba(247, 188, 31, 0.9);
+              ">Language & Arts</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-lg font-bold mb-2 leading-tight" style="color: var(--text)">
+            Classical Khmer Dance: A Thousand-Year Performance
+          </h3>
+          <p class="font-body text-sm leading-relaxed mb-4" style="color: var(--muted)">
+            Apsara dance at Angkor was both entertainment and religious
+            ritual. After being nearly obliterated under the Khmer Rouge, it
+            was painstakingly reconstructed from memory and inscriptions by
+            surviving masters.
+          </p>
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-xs" style="color: var(--muted)">AUG 3, 2024 · 7 MIN</span>
+            <a href="history.html#modern" class="font-mono text-xs font-bold" style="color: var(--gold)">Read →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Article 9 -->
+      <article class="story-card article-card overflow-hidden reveal" data-cat="architecture"
+        style="transition-delay: 0.1s">
+        <div class="h-48 relative overflow-hidden" style="background: linear-gradient(135deg, #0f1a1a, #1a3a3a)">
+          <img src="images/angkorlostcity.png" alt="Angkor's Lost City" />
+          <span class="badge absolute top-3 left-3" style="
+                background: rgba(0, 0, 0, 0.4);
+                border-color: rgba(247, 188, 31, 0.5);
+                color: rgba(247, 188, 31, 0.9);
+              ">Architecture</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-display text-lg font-bold mb-2 leading-tight" style="color: var(--text)">
+            Angkor's Lost City: What LiDAR Revealed Beneath the Jungle
+          </h3>
+          <p class="font-body text-sm leading-relaxed mb-4" style="color: var(--muted)">
+            Airborne laser scanning in 2015 revealed that the urban footprint
+            of Angkor covered 3,000 km² — making it the largest pre-industrial
+            city on Earth. Here's what we found.
+          </p>
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-xs" style="color: var(--muted)">JUL 22, 2024 · 13 MIN</span>
+            <a href="history.html#angkor" class="font-mono text-xs font-bold" style="color: var(--gold)">Read →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- No results -->
+    <div id="no-results" class="hidden text-center py-20">
+      <div class="font-khmer text-5xl mb-4" style="color: var(--border)">
+        ?
+      </div>
+      <p class="font-body text-lg" style="color: var(--muted)">
+        No articles match your search. Try a different term.
+      </p>
+    </div>
+
+    <!-- Load more -->
+    <div class="mt-12 text-center reveal">
+      <button onclick="alert('More articles coming soon!')"
+        class="px-8 py-4 font-mono text-xs font-bold uppercase tracking-widest border transition-colors hover:opacity-80"
+        style="border-color: var(--gold); color: var(--gold)">
+        Load More Articles
+      </button>
+      <p class="font-body text-sm mt-3" style="color: var(--muted)">
+        Showing 9 of 48 articles
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t mt-10 py-12 px-4 sm:px-6" style="border-color: var(--border)">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <div class="w-7 h-7 flex items-center justify-center" style="background: var(--gold)">
+          <span class="font-khmer text-white text-xs font-bold">ខ</span>
+        </div>
+        <span class="font-display font-bold" style="color: var(--text)">ខ្មែរ Chronicles</span>
+      </div>
+      <nav class="flex flex-wrap gap-6 text-sm font-body" style="color: var(--muted)">
+        <a href="index.html" class="hover:opacity-80">Home</a><a href="history.html"
+          class="hover:opacity-80">History</a><a href="articles.html" class="hover:opacity-80">Articles</a><a
+          href="timeline.html" class="hover:opacity-80">Timeline</a><a href="about.html"
+          class="hover:opacity-80">About</a>
+      </nav>
+      <p class="font-mono text-xs" style="color: var(--muted)">
+        © 2026 ខ្មែរ Chronicles
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("dark-toggle");
+    const icon = document.getElementById("theme-icon");
+    const updateHeader = () => {
+      const h = document.getElementById("main-header");
+      h.style.background = document.documentElement.classList.contains("dark")
+        ? "rgba(17,13,6,0.88)"
+        : "rgba(250,248,243,0.88)";
+    };
+    const stored = localStorage.getItem("theme");
+    if (
+      stored === "dark" ||
+      (!stored && window.matchMedia("(prefers-color-scheme:dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+      icon.textContent = "☀";
+    }
+    updateHeader();
+    toggle.addEventListener("click", () => {
+      document.documentElement.classList.toggle("dark");
+      const isDark = document.documentElement.classList.contains("dark");
+      icon.textContent = isDark ? "☀" : "☽";
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+      updateHeader();
+    });
+    document.getElementById("menu-btn").addEventListener("click", () => {
+      document.getElementById("mobile-nav").classList.toggle("hidden");
+    });
+    const reveals = document.querySelectorAll(".reveal");
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) e.target.classList.add("visible");
+        });
+      },
+      { threshold: 0.1 },
+    );
+    reveals.forEach((r) => io.observe(r));
+
+    let currentFilter = "all";
+    function filterArticles(cat, btn) {
+      currentFilter = cat;
+      document
+        .querySelectorAll(".filter-btn")
+        .forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      applyFilters();
+    }
+    function searchArticles(q) {
+      applyFilters(q);
+    }
+    function applyFilters(q) {
+      const query = (
+        q || document.getElementById("search-input").value
+      ).toLowerCase();
+      const cards = document.querySelectorAll(".article-card");
+      let visible = 0;
+      cards.forEach((c) => {
+        const catMatch =
+          currentFilter === "all" || c.dataset.cat === currentFilter;
+        const textMatch =
+          !query || c.textContent.toLowerCase().includes(query);
+        if (catMatch && textMatch) {
+          c.style.display = "";
+          visible++;
+        } else {
+          c.style.display = "none";
+        }
+      });
+      document
+        .getElementById("no-results")
+        .classList.toggle("hidden", visible > 0);
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khmer History Timeline | ខ្មែរ Chronicles</title>
+  <meta name="description"
+    content="An interactive visual timeline of Khmer history from 1st century Funan to modern Cambodia — key events, rulers, and turning points across 2,000 years." />
+  <meta name="keywords"
+    content="Khmer timeline, Cambodia history chronology, Angkor Empire dates, Khmer Rouge timeline, Cambodia independence" />
+  <link rel="canonical" href="https://khmerchronicles.com/timeline.html" />
+  <link rel="stylesheet" href="src/output.css" />
+  <link rel="stylesheet" href="src/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Noto+Serif+Khmer:wght@300;400;700;900&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Playfair Display"', "serif"],
+            body: ['"Cormorant Garamond"', "serif"],
+            khmer: ['"Noto Serif Khmer"', "serif"],
+            mono: ['"Space Mono"', "monospace"],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 right-0 z-50 border-b"
+    style="background: rgba(250, 248, 243, 0.88); border-color: var(--border)" id="main-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-9 h-9 flex items-center justify-center" style="background: var(--gold)">
+            <span class="font-khmer text-white text-lg font-bold">ខ</span>
+          </div>
+          <div>
+            <div class="font-display font-bold text-lg leading-none" style="color: var(--text)">
+              ខ្មែរ Chronicles
+            </div>
+            <div class="font-mono text-xs" style="color: var(--muted)">
+              KHMER HISTORY BLOG
+            </div>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-body" style="color: var(--muted)">
+          <a href="index.html" class="hover:opacity-80">Home</a>
+          <a href="history.html" class="hover:opacity-80">History</a>
+          <a href="articles.html" class="hover:opacity-80">Articles</a>
+          <a href="timeline.html" class="font-semibold" style="color: var(--gold)">Timeline</a>
+          <a href="about.html" class="hover:opacity-80">About</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <button id="dark-toggle" aria-label="Toggle dark mode" class="text-xl"
+            style="color: var(--gold); cursor: pointer">
+            <span id="theme-icon">☽</span>
+          </button>
+          <button id="menu-btn" class="md:hidden text-2xl" style="color: var(--text)">
+            ☰
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-nav" class="hidden md:hidden border-t px-4 py-4 space-y-3"
+      style="border-color: var(--border); background: var(--card-bg)">
+      <a href="index.html" class="block font-body text-sm py-1" style="color: var(--text)">Home</a>
+      <a href="history.html" class="block font-body text-sm py-1" style="color: var(--text)">History</a>
+      <a href="articles.html" class="block font-body text-sm py-1" style="color: var(--text)">Articles</a>
+      <a href="timeline.html" class="block font-body text-sm py-1" style="color: var(--gold)">Timeline</a>
+      <a href="about.html" class="block font-body text-sm py-1" style="color: var(--text)">About</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="pt-32 pb-12 px-4 sm:px-6 relative overflow-hidden">
+    <div class="max-w-4xl mx-auto hero-in">
+      <span class="badge mb-4 inline-block">2,000 Years of History</span>
+      <h1 class="font-display text-5xl sm:text-6xl font-bold leading-tight mt-3 mb-4" style="color: var(--text)">
+        The Khmer<br /><em class="font-light" style="color: var(--gold)">Timeline</em>
+      </h1>
+      <p class="font-body text-xl leading-relaxed max-w-2xl" style="color: var(--muted)">
+        Every major turning point in Khmer civilization — from the first
+        riverine kingdoms to the present day — in one scroll.
+      </p>
+      <div class="angkor-border mt-8 max-w-md"></div>
+      <!-- Legend -->
+      <div class="flex flex-wrap gap-6 mt-6">
+        <div class="flex items-center gap-2">
+          <div class="w-5 h-5 rounded-full" style="
+                background: var(--gold);
+                box-shadow:
+                  0 0 0 3px var(--bg),
+                  0 0 0 4px var(--gold);
+              "></div>
+          <span class="font-mono text-xs" style="color: var(--muted)">MAJOR EVENT</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="w-3 h-3 rounded-full" style="background: var(--gold)"></div>
+          <span class="font-mono text-xs" style="color: var(--muted)">EVENT</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="py-10 px-4 sm:px-6 max-w-5xl mx-auto">
+    <div class="relative">
+      <div class="tl-line"></div>
+
+      <!-- ERA: PRE-ANGKOR -->
+      <div class="era-header reveal">
+        <div class="font-mono text-xs uppercase tracking-widest mb-1" style="color: rgba(200, 134, 10, 0.7)">
+          Era I
+        </div>
+        <div class="font-display text-2xl font-bold">Pre-Angkor Period</div>
+        <div class="font-khmer text-sm" style="color: rgba(245, 223, 160, 0.6)">
+          សម័យមុនអង្គរ — 1st to 8th Century
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-left">
+          <div class="event-card max-w-xs ml-auto">
+            <div class="font-mono text-xs mb-1" style="color: var(--gold)">
+              ~100 AD
+            </div>
+            <h4 class="font-display text-base font-bold mb-1" style="color: var(--text)">
+              Funan Kingdom Established
+            </h4>
+            <p class="font-body text-sm" style="color: var(--muted)">
+              First major state in Southeast Asia emerges at the Mekong delta
+              mouth. Chinese chronicles document its sophisticated trade
+              networks.
+            </p>
+          </div>
+        </div>
+        <div class="tl-center">
+          <div class="tl-dot major"></div>
+        </div>
+        <div class="tl-right"></div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-left"></div>
+        <div class="tl-center">
+          <div class="tl-dot"></div>
+        </div>
+        <div class="tl-right">
+          <div class="event-card max-w-xs">
+            <div class="font-mono text-xs mb-1" style="color: var(--gold)">
+              ~245 AD
+            </div>
+            <h4 class="font-display text-base font-bold mb-1" style="color: var(--text)">
+              Chinese Mission to Funan
+            </h4>
+            <p class="font-body text-sm" style="color: var(--muted)">
+              Envoys Kang Tai and Zhu Ying visit and record detailed accounts
+              of Funan's society, trade, and governance for Chinese imperial
+              records.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-left">
+          <div class="event-card max-w-xs ml-auto">
+            <div class="font-mono text-xs mb-1" style="color: var(--gold)">
+              550–600 AD
+            </div>
+            <h4 class="font-display text-base font-bold mb-1" style="color: var(--text)">
+              Rise of Chenla
+            </h4>
+            <p class="font-body text-sm" style="color: var(--muted)">
+              The Chenla polity absorbs Funan. More distinctly Khmer-speaking
+              rulers begin using Old Khmer in inscriptions alongside Sanskrit.
+            </p>
+          </div>
+        </div>
+        <div class="tl-center">
+          <div class="tl-dot major"></div>
+        </div>
+        <div class="tl-right"></div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-left"></div>
+        <div class="tl-center">
+          <div class="tl-dot"></div>
+        </div>
+        <div class="tl-right">
+          <div class="event-card max-w-xs">
+            <div class="font-mono text-xs mb-1" style="color: var(--gold)">
+              611 AD
+            </div>
+            <h4 class="font-display text-base font-bold mb-1" style="color: var(--text)">
+              Oldest Khmer Inscription
+            </h4>
+            <p class="font-body text-sm" style="color: var(--muted)">
+              The stone inscription at Angkor Borei, dated 611 AD, is the
+              oldest known dated text written in the Khmer language — a
+              pivotal moment in linguistic identity.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ERA: ANGKOR -->
+      <div class="era-header reveal">
+        <div class="font-mono text-xs uppercase tracking-widest mb-1" style="color: rgba(200, 134, 10, 0.7)">
+          Era II
+        </div>
+        <div class="font-display text-2xl font-bold">The Angkor Empire</div>
+        <div class="font-khmer text-sm" style="color: rgba(245, 223, 160, 0.6)">
+          សម័យអង្គរ — 802 to 1431
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-left">
+          <div class="event-card max-w-xs ml-auto" style="border-color: var(--gold)">
+            <div class="font-mono text-xs mb-1" style="color: var(--gold)">
+              802 AD ★
+            </div>
+            <h4 class="font-display text-base font-bold mb-1" style="color: var(--text)">
+              Jayavarman II Founds the Empire
+            </h4>
+            <p class="font-body text-sm" style="color: var(--muted)">
+              The devaraja ritual on Phnom Kulen establishes Jayavarman II as
+              the first King of the Khmer Empire, independent from Java. Year
+              0 of the Angkor era.
+            </p>
+          </div>
+        </div>
+        <div class="tl-center">
+          <div class="tl-dot major" style="
+                background: var(--gold);
+                box-shadow:
+                  0 0 0 5px var(--bg),
+                  0 0 0 7px var(--gold),
+                  0 0 30px rgba(200, 134, 10, 0.5);
+                width: 26px;
+                height: 26px;
+              "></div>
+        </div>
+        <div class="tl-right"></div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-left"></div>
+        <div class="tl-center">
+          <div class="tl-dot"></div>
+        </div>
+        <div class="tl-right">
+          <div class="event-card max-w-xs">
+            <div class="font-mono text-xs mb-1" style="color: var(--gold)">
+              889–910 AD
+            </div>
+            <h4 class="font-display text-base font-bold mb-1" style="color: var(--text)">
+              Yasovarman I Builds Yasodharapura
+            </h4>
+            <p class="font-body text-sm" style="color: var(--muted)">
+              First major urban development at Angkor. Yasovarman I constructs
+              the East Baray — a reservoir 7km × 1.8km — and the hilltop
+              temple Phnom Bakheng.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-left">
+          <div class="event-card max-w-xs ml-auto">
+            <div class="font-mono text-xs mb-1" style="color: var(--gold)">
+              1113–1150
+            </div>
+            <h4 class="font-display text-base font-bold mb-1" style="color: var(--text)">
+              Suryavarman II & Angkor Wat
+            </h4>
+            <p class="font-body text-sm" style="color: var(--muted)">
+              Construction of Angkor Wat begins. The largest religious
+              monument ever built — 400 acres, moat 5.5km around, 5 towers
+              representing Mount Meru, dedicated to Vishnu.
+            </p>
+          </div>
+        </div>
+        <div class="tl-center">
+          <div class="tl-dot major"></div>
+        </div>
+        <div class="tl-right"></div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-left"></div>
+        <div class="tl-center">
+          <div class="tl-dot"></div>
+        </div>
+        <div class="tl-right">
+          <div class="event-card max-w-xs">
+            <div class="font-mono text-xs mb-1" style="color: var(--gold)">
+              1177 AD
+            </div>
+            <h4 class="font-display text-base font-bold mb-1" style="color: var(--text)">
+              Cham Sack of Angkor
+            </h4>
+            <p class="font-body text-sm" style="color: var(--muted)">
+              The Cham navy sails up the Tonle Sap lake and sacks Angkor in a
+              devastating surprise attack, killing the king and plundering the
+              capital.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-left">
+          <div class="event-card max-w-xs ml-auto" style="border-color: var(--gold)">
+            <div class="font-mono text-xs mb-1" style="color: var(--gold)">
+              1181–1218 ★
+            </div>
+            <h4 class="font-display text-base font-bold mb-1" style="color: var(--text)">
+              Jayavarman VII — The Greatest King
+            </h4>
+            <p class="font-body text-sm" style="color: var(--muted)">
+              Repels the Cham. Builds Angkor Thom, the Bayon, Ta Prohm, Preah
+              Khan. Establishes 102 hospitals and a road network with 121 rest
+              houses across the empire. Converts to Buddhism.
+            </p>
+          </div>
+        </div>
+        <div class="tl-center">
+          <div class="tl-dot major"></div>
+        </div>
+        <div class="tl-right"></div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-left"></div>
+        <div class="tl-center">
+          <div class="tl-dot"></div>
+        </div>
+        <div class="tl-right">
+          <div class="event-card max-w-xs">
+            <div class="font-mono text-xs mb-1" style="color: var(--gold)">
+              1296–97
+            </div>
+            <h4 class="font-display text-base font-bold mb-1" style="color: var(--text)">
+              Zhou Daguan Visits Angkor
+            </h4>
+            <p class="font-body text-sm" style="color: var(--muted)">
+              Chinese diplomat Zhou Daguan spends a year at Angkor and writes
+              "The Customs of Cambodia" — the only surviving eyewitness
+              account of Angkor at its height.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-left">
+          <div class="event-card max-w-xs ml-auto" style="border-color: rgba(220, 38, 38, 0.4)">
+            <div class="font-mono text-xs mb-1" style="color: #ef4444">
+              1431 AD
+            </div>
+            <h4 class="font-display text-base font-bold mb-1" style="color: var(--text)">
+              Fall of Angkor
+            </h4>
+            <p class="font-body text-sm" style="color: var(--muted)">
+              The Thai kingdom of Ayutthaya sacks Angkor. The Khmer court
+              abandons the capital and relocates to Phnom Penh, ending the
+              Angkor era after 629 years.
+            </p>
+          </div>
+        </div>
+        <div class="tl-center">
+          <div class="tl-dot major" style="
+                background: #ef4444;
+                box-shadow:
+                  0 0 0 5px var(--bg),
+                  0 0 0 6px #ef4444;
+              "></div>
+        </div>
+        <div class="tl-right"></div>
+      </div>
+
+      <!-- ERA: POST-ANGKOR & COLONIAL -->
+      <div class="era-header reveal">
+        <div class="font-mono text-xs uppercase tracking-widest mb-1" style="color: rgba(200, 134, 10, 0.7)">
+          Era III–IV
+        </div>
+        <div class="font-display text-2xl font-bold">
+          Post-Angkor & Colonial Period
+        </div>
+        <div class="font-khmer text-sm" style="color: rgba(245, 223, 160, 0.6)">
+          1431 – 1953
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-left"></div>
+        <div class="tl-center">
+          <div class="tl-dot"></div>
+        </div>
+        <div class="tl-right">
+          <div class="event-card max-w-xs">
+            <div class="font-mono text-xs mb-1" style="color: var(--gold)">
+              1594 AD
+            </div>
+            <h4 class="font-display text-base font-bold mb-1" style="color: var(--text)">
+              Sack of Lovek
+            </h4>
+            <p class="font-body text-sm" style="color: var(--muted)">
+              Thai armies destroy the new Cambodian capital Lovek. Traditional
+              accounts say Cambodia's sacred knowledge was lost forever in
+              this catastrophe.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-left">
+          <div class="event-card max-w-xs ml-auto">
+            <div class="font-mono text-xs mb-1" style="color: var(--gold)">
+              1863 AD
+            </div>
+            <h4 class="font-display text-base font-bold mb-1" style="color: var(--text)">
+              French Protectorate Established
+            </h4>
+            <p class="font-body text-sm" style="color: var(--muted)">
+              King Norodom signs treaty with France. Cambodia becomes a French
+              protectorate, ending its independence but saving it from full
+              absorption by Thailand or Vietnam.
+            </p>
+          </div>
+        </div>
+        <div class="tl-center">
+          <div class="tl-dot major"></div>
+        </div>
+        <div class="tl-right"></div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-left"></div>
+        <div class="tl-center">
+          <div class="tl-dot"></div>
+        </div>
+        <div class="tl-right">
+          <div class="event-card max-w-xs">
+            <div class="font-mono text-xs mb-1" style="color: var(--gold)">
+              1907
+            </div>
+            <h4 class="font-display text-base font-bold mb-1" style="color: var(--text)">
+              Angkor Returned to Cambodia
+            </h4>
+            <p class="font-body text-sm" style="color: var(--muted)">
+              France negotiates the transfer of Siem Reap and Battambang from
+              Thailand back to Cambodia. Angkor Wat, held by Thailand since
+              1795, returns to Khmer hands.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-left">
+          <div class="event-card max-w-xs ml-auto" style="border-color: var(--gold)">
+            <div class="font-mono text-xs mb-1" style="color: var(--gold)">
+              NOV 9, 1953 ★
+            </div>
+            <h4 class="font-display text-base font-bold mb-1" style="color: var(--text)">
+              Cambodia Gains Independence
+            </h4>
+            <p class="font-body text-sm" style="color: var(--muted)">
+              King Norodom Sihanouk achieves full independence from France —
+              peacefully, through political pressure and diplomacy rather than
+              armed uprising. National Day is still celebrated.
+            </p>
+          </div>
+        </div>
+        <div class="tl-center">
+          <div class="tl-dot major"></div>
+        </div>
+        <div class="tl-right"></div>
+      </div>
+
+      <!-- ERA: MODERN -->
+      <div class="era-header reveal">
+        <div class="font-mono text-xs uppercase tracking-widest mb-1" style="color: rgba(200, 134, 10, 0.7)">
+          Era V–VI
+        </div>
+        <div class="font-display text-2xl font-bold">Conflict & Renewal</div>
+        <div class="font-khmer text-sm" style="color: rgba(245, 223, 160, 0.6)">
+          1953 – Present
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-left"></div>
+        <div class="tl-center">
+          <div class="tl-dot"></div>
+        </div>
+        <div class="tl-right">
+          <div class="event-card max-w-xs">
+            <div class="font-mono text-xs mb-1" style="color: var(--gold)">
+              1953–1970
+            </div>
+            <h4 class="font-display text-base font-bold mb-1" style="color: var(--text)">
+              Sihanouk's "Golden Age"
+            </h4>
+            <p class="font-body text-sm" style="color: var(--muted)">
+              Cambodia flourishes under Sihanouk's leadership. Phnom Penh
+              becomes the "Pearl of Asia." Modern universities, hospitals, and
+              a national film industry are established.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-left">
+          <div class="event-card max-w-xs ml-auto" style="border-color: rgba(220, 38, 38, 0.4)">
+            <div class="font-mono text-xs mb-1" style="color: #ef4444">
+              APR 17, 1975 ★
+            </div>
+            <h4 class="font-display text-base font-bold mb-1" style="color: var(--text)">
+              Khmer Rouge Seizes Power
+            </h4>
+            <p class="font-body text-sm" style="color: var(--muted)">
+              Pol Pot's forces enter Phnom Penh. The entire city is evacuated
+              within days. "Year Zero" begins — money is abolished, cities
+              emptied, and Cambodia's darkest chapter opens.
+            </p>
+          </div>
+        </div>
+        <div class="tl-center">
+          <div class="tl-dot major" style="
+                background: #ef4444;
+                box-shadow:
+                  0 0 0 5px var(--bg),
+                  0 0 0 7px #ef4444,
+                  0 0 20px rgba(220, 38, 38, 0.4);
+              "></div>
+        </div>
+        <div class="tl-right"></div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-left"></div>
+        <div class="tl-center">
+          <div class="tl-dot"></div>
+        </div>
+        <div class="tl-right">
+          <div class="event-card max-w-xs">
+            <div class="font-mono text-xs mb-1" style="color: var(--gold)">
+              JAN 7, 1979
+            </div>
+            <h4 class="font-display text-base font-bold mb-1" style="color: var(--text)">
+              Liberation of Phnom Penh
+            </h4>
+            <p class="font-body text-sm" style="color: var(--muted)">
+              Vietnamese forces enter the capital, ending the Khmer Rouge
+              regime. 1.7–2.5 million people had perished in the previous 4
+              years. The long reconstruction begins.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-left">
+          <div class="event-card max-w-xs ml-auto">
+            <div class="font-mono text-xs mb-1" style="color: var(--gold)">
+              1991–1993
+            </div>
+            <h4 class="font-display text-base font-bold mb-1" style="color: var(--text)">
+              Paris Peace & UN Elections
+            </h4>
+            <p class="font-body text-sm" style="color: var(--muted)">
+              The Paris Agreements end the civil war. UNTAC oversees the first
+              free elections. Sihanouk returns as king. Cambodia rejoins the
+              international community.
+            </p>
+          </div>
+        </div>
+        <div class="tl-center">
+          <div class="tl-dot major"></div>
+        </div>
+        <div class="tl-right"></div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-left"></div>
+        <div class="tl-center">
+          <div class="tl-dot"></div>
+        </div>
+        <div class="tl-right">
+          <div class="event-card max-w-xs">
+            <div class="font-mono text-xs mb-1" style="color: var(--gold)">
+              1992
+            </div>
+            <h4 class="font-display text-base font-bold mb-1" style="color: var(--text)">
+              Angkor Listed as UNESCO World Heritage
+            </h4>
+            <p class="font-body text-sm" style="color: var(--muted)">
+              UNESCO designates the Angkor Archaeological Park a World
+              Heritage Site, bringing global resources and attention to its
+              restoration and management.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-left">
+          <div class="event-card max-w-xs ml-auto">
+            <div class="font-mono text-xs mb-1" style="color: var(--gold)">
+              2018
+            </div>
+            <h4 class="font-display text-base font-bold mb-1" style="color: var(--text)">
+              Khmer Rouge Genocide Verdict
+            </h4>
+            <p class="font-body text-sm" style="color: var(--muted)">
+              The ECCC convicts Nuon Chea and Khieu Samphan of genocide and
+              crimes against humanity — the first legal genocide convictions
+              for the Khmer Rouge atrocities after 30 years of proceedings.
+            </p>
+          </div>
+        </div>
+        <div class="tl-center">
+          <div class="tl-dot major"></div>
+        </div>
+        <div class="tl-right"></div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-left"></div>
+        <div class="tl-center">
+          <div class="tl-dot" style="
+                background: var(--gold);
+                box-shadow:
+                  0 0 0 4px var(--bg),
+                  0 0 0 5px var(--gold),
+                  0 0 15px rgba(200, 134, 10, 0.5);
+              "></div>
+        </div>
+        <div class="tl-right">
+          <div class="event-card max-w-xs" style="border-color: var(--gold)">
+            <div class="font-mono text-xs mb-1" style="color: var(--gold)">
+              TODAY
+            </div>
+            <h4 class="font-display text-base font-bold mb-1" style="color: var(--text)">
+              Cambodia Rebuilds & Remembers
+            </h4>
+            <p class="font-body text-sm" style="color: var(--muted)">
+              A young nation with a median age of 25 is rediscovering its
+              ancient roots. Cultural revival, digital heritage, and Khmer
+              language preservation are reshaping national identity in the
+              21st century.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 px-4 sm:px-6 max-w-3xl mx-auto text-center reveal">
+    <div class="khmer-divider mb-6">
+      <span class="font-mono text-xs tracking-widest uppercase px-3">Explore Deeper</span>
+    </div>
+    <h2 class="font-display text-3xl font-bold mb-4" style="color: var(--text)">
+      Want the Full Story?
+    </h2>
+    <p class="font-body text-lg mb-8" style="color: var(--muted)">
+      Each event on this timeline has a dedicated deep-dive article. Read the
+      scholars, examine the evidence, and understand the context.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="history.html"
+        class="px-6 py-3 font-mono text-xs font-bold uppercase tracking-widest transition-opacity hover:opacity-80"
+        style="background: var(--gold); color: #fff">Read History →</a>
+      <a href="articles.html"
+        class="px-6 py-3 font-mono text-xs font-bold uppercase tracking-widest border transition-opacity hover:opacity-80"
+        style="border-color: var(--gold); color: var(--gold)">All Articles</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t mt-10 py-12 px-4 sm:px-6" style="border-color: var(--border)">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <div class="w-7 h-7 flex items-center justify-center" style="background: var(--gold)">
+          <span class="font-khmer text-white text-xs font-bold">ខ</span>
+        </div>
+        <span class="font-display font-bold" style="color: var(--text)">ខ្មែរ Chronicles</span>
+      </div>
+      <nav class="flex flex-wrap gap-6 text-sm font-body" style="color: var(--muted)">
+        <a href="index.html" class="hover:opacity-80">Home</a><a href="history.html"
+          class="hover:opacity-80">History</a><a href="articles.html" class="hover:opacity-80">Articles</a><a
+          href="timeline.html" class="hover:opacity-80">Timeline</a><a href="about.html"
+          class="hover:opacity-80">About</a>
+      </nav>
+      <p class="font-mono text-xs" style="color: var(--muted)">
+        © 2026 ខ្មែរ Chronicles
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("dark-toggle");
+    const icon = document.getElementById("theme-icon");
+    const updateHeader = () => {
+      const h = document.getElementById("main-header");
+      h.style.background = document.documentElement.classList.contains("dark")
+        ? "rgba(17,13,6,0.88)"
+        : "rgba(250,248,243,0.88)";
+    };
+    const stored = localStorage.getItem("theme");
+    if (
+      stored === "dark" ||
+      (!stored && window.matchMedia("(prefers-color-scheme:dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+      icon.textContent = "☀";
+    }
+    updateHeader();
+    toggle.addEventListener("click", () => {
+      document.documentElement.classList.toggle("dark");
+      const isDark = document.documentElement.classList.contains("dark");
+      icon.textContent = isDark ? "☀" : "☽";
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+      updateHeader();
+    });
+    document.getElementById("menu-btn").addEventListener("click", () => {
+      document.getElementById("mobile-nav").classList.toggle("hidden");
+    });
+    const reveals = document.querySelectorAll(".reveal");
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add("visible");
+            const l = e.target.querySelector(".tl-left");
+            const r = e.target.querySelector(".tl-right");
+            if (l) l.classList.add("visible");
+            if (r) r.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.1 },
+    );
+    reveals.forEach((r) => io.observe(r));
+  </script>
+</body>
+
+</html>

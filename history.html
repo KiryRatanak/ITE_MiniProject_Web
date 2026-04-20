@@ -1,0 +1,749 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khmer History — Eras & Civilizations | ខ្មែរ Chronicles</title>
+  <meta name="description"
+    content="A comprehensive guide to Khmer history from the Funan kingdom to modern Cambodia. Explore Pre-Angkor, the Angkor Empire, colonial era, and the road to recovery." />
+  <meta name="keywords"
+    content="Khmer Empire history, Angkor Wat, Funan kingdom, Chenla, Cambodia colonial, Khmer Rouge, Jayavarman II" />
+  <link rel="canonical" href="https://khmerchronicles.com/history.html" />
+  <link rel="stylesheet" href="src/output.css" />
+  <link rel="stylesheet" href="src/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Serif+Khmer:wght@300;400;700;900&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Playfair Display"', "serif"],
+            body: ['"Cormorant Garamond"', "serif"],
+            khmer: ['"Noto Serif Khmer"', "serif"],
+            mono: ['"Space Mono"', "monospace"],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 right-0 z-50 border-b"
+    style="background: rgba(250, 248, 243, 0.88); border-color: var(--border)" id="main-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-9 h-9 flex items-center justify-center" style="background: var(--gold)">
+            <span class="font-khmer text-white text-lg font-bold">ខ</span>
+          </div>
+          <div>
+            <div class="font-display font-bold text-lg leading-none" style="color: var(--text)">
+              ខ្មែរ Chronicles
+            </div>
+            <div class="font-mono text-xs" style="color: var(--muted)">
+              KHMER HISTORY BLOG
+            </div>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-body" style="color: var(--muted)">
+          <a href="index.html" class="hover:opacity-80">Home</a>
+          <a href="history.html" class="font-semibold" style="color: var(--gold)">History</a>
+          <a href="articles.html" class="hover:opacity-80">Articles</a>
+          <a href="timeline.html" class="hover:opacity-80">Timeline</a>
+          <a href="about.html" class="hover:opacity-80">About</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <button id="dark-toggle" aria-label="Toggle dark mode" class="text-xl" style="
+                color: var(--gold);
+                cursor: pointer;
+                transition: transform 0.3s;
+              " onmouseover="this.style.transform = 'rotate(20deg)'" onmouseout="this.style.transform = 'rotate(0)'">
+            <span id="theme-icon">☽</span>
+          </button>
+          <button id="menu-btn" class="md:hidden text-2xl" style="color: var(--text)">
+            ☰
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-nav" class="hidden md:hidden border-t px-4 py-4 space-y-3"
+      style="border-color: var(--border); background: var(--card-bg)">
+      <a href="index.html" class="block font-body text-sm py-1" style="color: var(--text)">Home</a>
+      <a href="history.html" class="block font-body text-sm py-1" style="color: var(--gold)">History</a>
+      <a href="articles.html" class="block font-body text-sm py-1" style="color: var(--text)">Articles</a>
+      <a href="timeline.html" class="block font-body text-sm py-1" style="color: var(--text)">Timeline</a>
+      <a href="about.html" class="block font-body text-sm py-1" style="color: var(--text)">About</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="pt-32 pb-16 px-4 sm:px-6 relative overflow-hidden">
+    <div class="absolute inset-0" style="
+          background: linear-gradient(
+            180deg,
+            rgba(26, 15, 0, 0.06) 0%,
+            transparent 100%
+          );
+        "></div>
+    <div class="absolute right-0 top-0 w-96 h-96 opacity-5">
+      <svg viewBox="0 0 200 200" class="w-full h-full">
+        <circle cx="100" cy="100" r="80" fill="none" stroke="#c8860a" stroke-width="2" />
+        <circle cx="100" cy="100" r="60" fill="none" stroke="#c8860a" stroke-width="1.5" />
+        <circle cx="100" cy="100" r="40" fill="none" stroke="#c8860a" stroke-width="1" />
+      </svg>
+    </div>
+    <div class="max-w-4xl mx-auto relative">
+      <div class="hero-in">
+        <span class="badge mb-4 inline-block">Complete Historical Record</span>
+        <h1 class="font-display text-5xl sm:text-6xl font-bold leading-tight mt-3 mb-4" style="color: var(--text)">
+          Khmer History<br /><em class="font-light" style="color: var(--gold)">Through the Ages</em>
+        </h1>
+      </div>
+      <div class="hero-in2">
+        <p class="font-body text-xl leading-relaxed max-w-2xl" style="color: var(--muted)">
+          From the early river kingdoms of Funan to the digital age of modern
+          Cambodia — a scholarly yet accessible journey through twelve
+          centuries of Khmer civilization.
+        </p>
+        <div class="angkor-border mt-8 max-w-md"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ERA NAVIGATION TABS -->
+  <section class="px-4 sm:px-6 py-8 sticky top-16 z-40 border-y"
+    style="background: var(--bg); border-color: var(--border)">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-wrap gap-2 items-center">
+        <span class="font-mono text-xs mr-2 hidden sm:block" style="color: var(--muted)">JUMP TO →</span>
+        <button onclick="scrollToSection('pre-angkor')" class="era-tab active" id="tab-pre">
+          Pre-Angkor
+        </button>
+        <button onclick="scrollToSection('angkor')" class="era-tab" id="tab-angkor">
+          Angkor Empire
+        </button>
+        <button onclick="scrollToSection('post-angkor')" class="era-tab" id="tab-post">
+          Post-Angkor
+        </button>
+        <button onclick="scrollToSection('colonial')" class="era-tab" id="tab-colonial">
+          Colonial
+        </button>
+        <button onclick="scrollToSection('independence')" class="era-tab" id="tab-ind">
+          Independence
+        </button>
+        <button onclick="scrollToSection('modern')" class="era-tab" id="tab-modern">
+          Modern
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ERA 1: PRE-ANGKOR ===== -->
+  <section id="pre-angkor" class="py-20 px-4 sm:px-6 max-w-7xl mx-auto">
+    <div class="reveal mb-10">
+      <div class="khmer-divider mb-4">
+        <span class="font-mono text-xs tracking-widest uppercase px-3">1st – 8th Century</span>
+      </div>
+      <div class="flex items-start gap-4">
+        <div class="font-display text-7xl font-black opacity-10 leading-none" style="color: var(--gold)">
+          I
+        </div>
+        <div>
+          <h2 class="font-display text-4xl sm:text-5xl font-bold" style="color: var(--text)">
+            Pre-Angkor Period
+          </h2>
+          <p class="font-khmer text-lg mt-1" style="color: var(--gold)">
+            សម័យមុនអង្គរ
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2 space-y-6 reveal">
+        <h3 class="font-display text-2xl font-semibold" style="color: var(--text)">
+          The Funan Kingdom — Southeast Asia's First Major State
+        </h3>
+        <p class="font-body text-lg leading-relaxed" style="color: var(--muted)">
+          The Funan kingdom (1st–6th century AD) emerged at the mouth of the
+          Mekong River delta, in what is now southern Vietnam and Cambodia.
+          Chinese chronicles describe it as a powerful maritime state that
+          controlled trade routes between India and China. The Funanese built
+          the first hydraulic infrastructure in the region, using canals to
+          drain the vast lowland plains for rice cultivation.
+        </p>
+        <p class="font-body text-lg leading-relaxed" style="color: var(--muted)">
+          Indian cultural influence was profound — Sanskrit became the
+          language of the court and inscriptions, Brahminism and later
+          Hinduism shaped religious life, and Indian architectural forms
+          influenced temple design. The famous Chinese envoy Kang Tai visited
+          in the 3rd century and reported a kingdom of sophisticated
+          governance, with a court that rivaled those of China.
+        </p>
+
+        <div class="pull-quote text-xl my-8">
+          The kings of Funan were called "mountain kings" — they ruled not
+          just people, but the monsoon itself.
+        </div>
+
+        <h3 class="font-display text-2xl font-semibold" style="color: var(--text)">
+          The Chenla Period — Rise of the Khmers
+        </h3>
+        <p class="font-body text-lg leading-relaxed" style="color: var(--muted)">
+          By the late 6th century, the Funan state collapsed and was replaced
+          by Chenla, a more distinctly Khmer-speaking polity. Chinese records
+          refer to two states: Land Chenla (in the Cambodian interior) and
+          Water Chenla (near the coast). The Chenla inscriptions, written in
+          Old Khmer, are among the earliest evidence of the Khmer language and
+          represent a crucial moment in Cambodian national identity.
+        </p>
+        <p class="font-body text-lg leading-relaxed" style="color: var(--muted)">
+          The inscription at Angkor Borei from 611 AD is considered the oldest
+          dated text in the Khmer language. These stone inscriptions reveal a
+          society with complex land tenure, royal rituals, and temple-based
+          religious communities. The stage was being set for the great empire
+          to come.
+        </p>
+      </div>
+
+      <!-- Sidebar facts -->
+      <aside class="space-y-4 reveal" style="transition-delay: 0.2s">
+        <div class="story-card p-5">
+          <div class="font-mono text-xs uppercase tracking-widest mb-3" style="color: var(--gold)">
+            Key Facts
+          </div>
+          <ul class="space-y-3 font-body text-sm" style="color: var(--muted)">
+            <li class="flex gap-2">
+              <span style="color: var(--gold)">▸</span><span><strong style="color: var(--text)">Capital:</strong>
+                Vyadhapura (Funan), then Sambor Prei Kuk (Chenla)</span>
+            </li>
+            <li class="flex gap-2">
+              <span style="color: var(--gold)">▸</span><span><strong style="color: var(--text)">Religion:</strong>
+                Hinduism (Shaivism), then early Buddhism</span>
+            </li>
+            <li class="flex gap-2">
+              <span style="color: var(--gold)">▸</span><span><strong style="color: var(--text)">Oldest
+                  inscription:</strong>
+                611 AD, Angkor Borei</span>
+            </li>
+            <li class="flex gap-2">
+              <span style="color: var(--gold)">▸</span><span><strong style="color: var(--text)">Trade partners:</strong>
+                India, China, Rome</span>
+            </li>
+            <li class="flex gap-2">
+              <span style="color: var(--gold)">▸</span><span><strong style="color: var(--text)">Key ruler:</strong>
+                Rudravarman I of Funan</span>
+            </li>
+          </ul>
+        </div>
+        <div class="story-card p-5" style="background: linear-gradient(135deg, #1a0f00, #3d2200)">
+          <div class="font-mono text-xs uppercase tracking-widest mb-3" style="color: rgba(200, 134, 10, 0.8)">
+            Related Article
+          </div>
+          <h4 class="font-display text-base font-semibold mb-2" style="color: #f5dfa0">
+            The Lost City of Angkor Borei
+          </h4>
+          <p class="font-body text-sm mb-3" style="color: rgba(245, 223, 160, 0.6)">
+            Archaeologists are excavating what may be the oldest Khmer city on
+            record.
+          </p>
+          <a href="articles.html" class="font-mono text-xs" style="color: var(--gold)">Read Article →</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== ERA 2: ANGKOR ===== -->
+  <section id="angkor" class="py-20 px-4 sm:px-6" style="
+        background: linear-gradient(
+          180deg,
+          var(--bg) 0%,
+          rgba(26, 15, 0, 0.04) 50%,
+          var(--bg) 100%
+        );
+      ">
+    <div class="max-w-7xl mx-auto">
+      <div class="reveal mb-10">
+        <div class="khmer-divider mb-4">
+          <span class="font-mono text-xs tracking-widest uppercase px-3">802 – 1431 AD</span>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="font-display text-7xl font-black opacity-10 leading-none" style="color: var(--gold)">
+            II
+          </div>
+          <div>
+            <h2 class="font-display text-4xl sm:text-5xl font-bold" style="color: var(--text)">
+              The Angkor Empire
+            </h2>
+            <p class="font-khmer text-lg mt-1" style="color: var(--gold)">
+              សម័យអង្គរ
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3-col grid of kings -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div class="story-card p-6 reveal">
+          <div
+            class="w-12 h-12 rounded-full flex items-center justify-center mb-4 font-display font-bold text-xl text-white"
+            style="background: var(--gold)">
+            <img src="images/jayavarmanII.png " alt=" Jayavarman II" class="w-full h-full object-cover rounded-full" />
+          </div>
+          <h3 class="font-display text-lg font-semibold mb-2" style="color: var(--text)">
+            Jayavarman II (802–835)
+          </h3>
+          <p class="font-body text-sm leading-relaxed" style="color: var(--muted)">
+            Founded the Khmer Empire by performing the
+            <em>devaraja</em> ritual on Phnom Kulen in 802 AD, establishing
+            the concept of the god-king that would define Angkor for six
+            centuries. He broke free from Javanese influence and unified the
+            Khmer-speaking territories.
+          </p>
+        </div>
+        <div class="story-card p-6 reveal" style="transition-delay: 0.1s">
+          <div
+            class="w-12 h-12 rounded-full flex items-center justify-center mb-4 font-display font-bold text-xl text-white"
+            style="background: var(--gold)">
+            <img src="images/suryavarmanII.png " alt="Suryavarman II" class="w-full h-full object-cover rounded-full" />
+          </div>
+          <h3 class="font-display text-lg font-semibold mb-2" style="color: var(--text)">
+            Suryavarman II (1113–1150)
+          </h3>
+          <p class="font-body text-sm leading-relaxed" style="color: var(--muted)">
+            Builder of Angkor Wat, the largest religious monument in the
+            world. He extended the empire to its greatest geographic reach,
+            conquering territories in modern-day Thailand, Laos, and Vietnam.
+            His funerary temple, dedicated to Vishnu, took 30 years to build.
+          </p>
+        </div>
+        <div class="story-card p-6 reveal" style="transition-delay: 0.2s">
+          <div
+            class="w-12 h-12 rounded-full flex items-center justify-center mb-4 font-display font-bold text-xl text-white"
+            style="background: var(--gold)">
+            <img src="images/jayavarmanVII.png " alt=" Jayavarman VII" class="w-full h-full object-cover rounded-full" />
+          </div>
+          <h3 class="font-display text-lg font-semibold mb-2" style="color: var(--text)">
+            Jayavarman VII (1181–1218)
+          </h3>
+          <p class="font-body text-sm leading-relaxed" style="color: var(--muted)">
+            The greatest of all Khmer kings. After repelling a Cham invasion,
+            he converted to Mahayana Buddhism and built Angkor Thom, the Bayon
+            temple with its iconic smiling faces, Ta Prohm, Preah Khan, and
+            102 hospitals across the empire.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-10 reveal">
+        <div>
+          <h3 class="font-display text-2xl font-semibold mb-4" style="color: var(--text)">
+            The Hydraulic Empire
+          </h3>
+          <p class="font-body text-lg leading-relaxed mb-4" style="color: var(--muted)">
+            Angkor's power rested on an astonishing feat of engineering: a
+            system of reservoirs (<em>barays</em>), canals, and distribution
+            channels that covered over 1,000 square kilometers. The West Baray
+            alone measures 8km × 2.1km and held 53 million cubic meters of
+            water. This system allowed three rice harvests per year, feeding a
+            population estimated at 750,000 to 1 million people — making
+            Angkor the largest pre-industrial city in the world.
+          </p>
+          <p class="font-body text-lg leading-relaxed" style="color: var(--muted)">
+            Recent LiDAR surveys by the Greater Angkor Project have revealed
+            that the urban footprint of Angkor extended across 3,000 square
+            kilometers — larger than modern-day Los Angeles. This "low-density
+            agrarian urbanism" was unique in the premodern world.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-display text-2xl font-semibold mb-4" style="color: var(--text)">
+            Decline of the Empire
+          </h3>
+          <p class="font-body text-lg leading-relaxed mb-4" style="color: var(--muted)">
+            Historians debate the causes of Angkor's decline. Contributing
+            factors included repeated Thai (Ayutthaya) attacks, overextension
+            of the hydraulic system, climate-driven droughts in the 14th–15th
+            centuries (confirmed by tree ring analysis), elite religious
+            fragmentation, and shifts in trade routes to maritime networks
+            that bypassed inland Angkor.
+          </p>
+          <p class="font-body text-lg leading-relaxed" style="color: var(--muted)">
+            In 1431, the Thai kingdom of Ayutthaya sacked Angkor. The Khmer
+            court relocated to Phnom Penh, then Lovek, then Udong, beginning
+            the Post-Angkor era. Angkor Wat itself was never abandoned —
+            Buddhist monks maintained it continuously, which helped preserve
+            it.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ERA 3: POST-ANGKOR + COLONIAL + INDEPENDENCE + MODERN (condensed but complete) -->
+  <section id="post-angkor" class="py-20 px-4 sm:px-6 max-w-7xl mx-auto">
+    <div class="reveal mb-10">
+      <div class="khmer-divider mb-4">
+        <span class="font-mono text-xs tracking-widest uppercase px-3">1431 – 1863</span>
+      </div>
+      <div class="flex items-start gap-4">
+        <div class="font-display text-7xl font-black opacity-10 leading-none" style="color: var(--gold)">
+          III
+        </div>
+        <div>
+          <h2 class="font-display text-4xl sm:text-5xl font-bold" style="color: var(--text)">
+            Post-Angkor Period
+          </h2>
+          <p class="font-khmer text-lg mt-1" style="color: var(--gold)">
+            សម័យក្រោយអង្គរ
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="grid lg:grid-cols-3 gap-8 reveal">
+      <div class="lg:col-span-2 space-y-4">
+        <p class="font-body text-lg leading-relaxed" style="color: var(--muted)">
+          After the fall of Angkor, Cambodia entered a period of political
+          fragmentation and external pressure. The kingdom shifted its capital
+          multiple times — from Phnom Penh to Lovek (1529) and then Udong
+          (1618). The "Dark Ages" of Cambodian history saw the kingdom
+          squeezed between the expanding Thai kingdoms to the west and
+          Vietnamese expansion to the east.
+        </p>
+        <p class="font-body text-lg leading-relaxed" style="color: var(--muted)">
+          Despite political weakness, Theravada Buddhism flourished as the
+          dominant religion, replacing both Hinduism and Mahayana Buddhism.
+          Cambodian literature, dance, and the arts developed distinctive
+          forms during this period. The <em>Reamker</em> (Cambodian version of
+          the Ramayana) became a cornerstone of Khmer cultural identity.
+        </p>
+        <p class="font-body text-lg leading-relaxed" style="color: var(--muted)">
+          By the 19th century, Cambodia had lost vast territories to Thailand
+          (including Battambang and Siem Reap) and Vietnam (the Mekong Delta,
+          once called Kampuchea Krom). Facing extinction as a state, King
+          Norodom signed a protectorate agreement with France in 1863.
+        </p>
+      </div>
+      <div class="space-y-4">
+        <div class="story-card p-5 reveal" style="transition-delay: 0.2s">
+          <div class="font-mono text-xs uppercase tracking-widest mb-2" style="color: var(--gold)">
+            Key Development
+          </div>
+          <h4 class="font-display text-base font-semibold mb-2" style="color: var(--text)">
+            Lovek Falls (1594)
+          </h4>
+          <p class="font-body text-sm" style="color: var(--muted)">
+            The Thai sack of Lovek was so devastating that legends say the
+            Khmers lost their sacred texts — and their golden age — in one
+            night.
+          </p>
+        </div>
+        <div class="story-card p-5 reveal" style="transition-delay: 0.3s">
+          <div class="font-mono text-xs uppercase tracking-widest mb-2" style="color: var(--gold)">
+            Cultural Legacy
+          </div>
+          <h4 class="font-display text-base font-semibold mb-2" style="color: var(--text)">
+            Reamker Epic
+          </h4>
+          <p class="font-body text-sm" style="color: var(--muted)">
+            The Khmer adaptation of the Ramayana, composed in this era,
+            remains the foundation of classical Cambodian dance and theatre.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="colonial" class="py-20 px-4 sm:px-6" style="
+        background: linear-gradient(
+          180deg,
+          transparent 0%,
+          rgba(26, 15, 0, 0.04) 50%,
+          transparent 100%
+        );
+      ">
+    <div class="max-w-7xl mx-auto">
+      <div class="reveal mb-10">
+        <div class="khmer-divider mb-4">
+          <span class="font-mono text-xs tracking-widest uppercase px-3">1863 – 1953</span>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="font-display text-7xl font-black opacity-10 leading-none" style="color: var(--gold)">
+            IV
+          </div>
+          <div>
+            <h2 class="font-display text-4xl sm:text-5xl font-bold" style="color: var(--text)">
+              French Protectorate
+            </h2>
+            <p class="font-khmer text-lg mt-1" style="color: var(--gold)">
+              សម័យអាណានិគម
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-10 reveal">
+        <div class="space-y-4">
+          <p class="font-body text-lg leading-relaxed" style="color: var(--muted)">
+            France's protectorate over Cambodia (1863–1953) had contradictory
+            effects. On one hand, French colonial administrators reformed the
+            traditional administrative system, introduced Western education
+            and infrastructure, and — crucially — mapped, restored, and
+            publicized Angkor Wat to the world. The École française
+            d'Extrême-Orient (EFEO) conducted systematic archaeological
+            research that transformed understanding of Khmer civilization.
+          </p>
+          <p class="font-body text-lg leading-relaxed" style="color: var(--muted)">
+            On the other hand, France maintained nominal Khmer royalty as
+            figureheads while extracting rice, rubber, and taxes. In 1907,
+            France negotiated the return of Siem Reap and Battambang from
+            Thailand — a significant territorial gain for Cambodia. The
+            colonial period also gave rise to a French-educated Cambodian
+            elite who would later lead the independence movement — and,
+            tragically, the Khmer Rouge.
+          </p>
+        </div>
+        <div class="space-y-4">
+          <div class="story-card p-6">
+            <h4 class="font-display text-xl font-semibold mb-3" style="color: var(--text)">
+              Rediscovery of Angkor
+            </h4>
+            <p class="font-body text-base" style="color: var(--muted)">
+              Henri Mouhot's 1860 account of Angkor "rediscovered" the site
+              for Western audiences — though Cambodians had never forgotten
+              it. French restoration work from 1907–1970 cleared vegetation,
+              stabilized structures, and created the first systematic records
+              of Angkor's hundreds of temples.
+            </p>
+          </div>
+          <div class="story-card p-6">
+            <h4 class="font-display text-xl font-semibold mb-3" style="color: var(--text)">
+              The Independence Movement
+            </h4>
+            <p class="font-body text-base" style="color: var(--muted)">
+              Young King Norodom Sihanouk proved a masterful political actor,
+              using public pressure, diplomacy, and his own abdication as
+              leverage to force France to grant Cambodia independence on
+              November 9, 1953 — peacefully, without armed conflict.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="independence" class="py-20 px-4 sm:px-6 max-w-7xl mx-auto">
+    <div class="reveal mb-10">
+      <div class="khmer-divider mb-4">
+        <span class="font-mono text-xs tracking-widest uppercase px-3">1953 – 1979</span>
+      </div>
+      <div class="flex items-start gap-4">
+        <div class="font-display text-7xl font-black opacity-10 leading-none" style="color: var(--gold)">
+          V
+        </div>
+        <div>
+          <h2 class="font-display text-4xl sm:text-5xl font-bold" style="color: var(--text)">
+            Independence & Tragedy
+          </h2>
+          <p class="font-khmer text-lg mt-1" style="color: var(--gold)">
+            ឯករាជ្យ និងមហន្តរាយ
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="space-y-6 reveal">
+      <p class="font-body text-lg leading-relaxed max-w-3xl" style="color: var(--muted)">
+        The Sihanouk era (1953–1970) was a golden age of Cambodian arts,
+        cinema, architecture, and relative prosperity. Phnom Penh was called
+        the "Pearl of Asia." However, Cold War entanglements — US bombing of
+        Communist Vietnamese supply routes through Cambodia, Sihanouk's
+        tightrope neutrality — destabilized the country. The US-backed coup of
+        1970 brought General Lon Nol to power.
+      </p>
+      <div class="grid sm:grid-cols-2 gap-6 max-w-3xl">
+        <div class="story-card p-6" style="border-color: rgba(220, 38, 38, 0.3)">
+          <h4 class="font-display text-lg font-semibold mb-3" style="color: #ef4444">
+            The Khmer Rouge (1975–1979)
+          </h4>
+          <p class="font-body text-sm leading-relaxed" style="color: var(--muted)">
+            April 17, 1975: the Khmer Rouge, led by Pol Pot, seized Phnom Penh
+            and evacuated the entire population of the capital within days.
+            Their utopian agrarian revolution — "Year Zero" — resulted in the
+            death of an estimated 1.7 to 2.5 million people, nearly a quarter
+            of Cambodia's population, through execution, starvation, overwork,
+            and disease.
+          </p>
+        </div>
+        <div class="story-card p-6">
+          <h4 class="font-display text-lg font-semibold mb-3" style="color: var(--text)">
+            Liberation
+          </h4>
+          <p class="font-body text-sm leading-relaxed" style="color: var(--muted)">
+            On January 7, 1979, Vietnamese forces entered Phnom Penh and ended
+            the Khmer Rouge regime. The country was in ruins — with its
+            educated class decimated, infrastructure destroyed, and a
+            generation of children who had known nothing but terror.
+            Reconstruction would take decades.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="modern" class="py-20 px-4 sm:px-6" style="
+        background: linear-gradient(180deg, transparent, rgba(26, 15, 0, 0.04));
+      ">
+    <div class="max-w-7xl mx-auto">
+      <div class="reveal mb-10">
+        <div class="khmer-divider mb-4">
+          <span class="font-mono text-xs tracking-widest uppercase px-3">1979 – Present</span>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="font-display text-7xl font-black opacity-10 leading-none" style="color: var(--gold)">
+            VI
+          </div>
+          <div>
+            <h2 class="font-display text-4xl sm:text-5xl font-bold" style="color: var(--text)">
+              Modern Cambodia
+            </h2>
+            <p class="font-khmer text-lg mt-1" style="color: var(--gold)">
+              ព្រះរាជាណាចក្រកម្ពុជា
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="grid lg:grid-cols-3 gap-6 reveal">
+        <div class="story-card p-6">
+          <div class="font-mono text-xs uppercase tracking-widest mb-3" style="color: var(--gold)">
+            1991–1993
+          </div>
+          <h4 class="font-display text-lg font-semibold mb-2" style="color: var(--text)">
+            Paris Peace Accords
+          </h4>
+          <p class="font-body text-sm leading-relaxed" style="color: var(--muted)">
+            The 1991 Paris Peace Agreements ended the civil war. UN
+            peacekeepers (UNTAC) oversaw the 1993 elections, resulting in a
+            coalition government. Norodom Sihanouk returned as king. Cambodia
+            began the long road to democracy and economic recovery.
+          </p>
+        </div>
+        <div class="story-card p-6">
+          <div class="font-mono text-xs uppercase tracking-widest mb-3" style="color: var(--gold)">
+            2000s–2010s
+          </div>
+          <h4 class="font-display text-lg font-semibold mb-2" style="color: var(--text)">
+            Economic Growth
+          </h4>
+          <p class="font-body text-sm leading-relaxed" style="color: var(--muted)">
+            Cambodia emerged as one of Asia's fastest-growing economies,
+            driven by garment manufacturing, tourism, and construction. Phnom
+            Penh transformed into a modern city. International tourist
+            arrivals at Angkor Wat surpassed 2 million annually by 2010.
+          </p>
+        </div>
+        <div class="story-card p-6">
+          <div class="font-mono text-xs uppercase tracking-widest mb-3" style="color: var(--gold)">
+            Today
+          </div>
+          <h4 class="font-display text-lg font-semibold mb-2" style="color: var(--text)">
+            A Nation Remembering
+          </h4>
+          <p class="font-body text-sm leading-relaxed" style="color: var(--muted)">
+            Today's Cambodia grapples with its history while building its
+            future. The ECCC (Extraordinary Chambers in the Courts of
+            Cambodia) tried surviving Khmer Rouge leaders. A young generation
+            is rediscovering traditional arts, language, and pride in Khmer
+            identity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (same as index) -->
+  <footer class="border-t mt-10 py-12 px-4 sm:px-6" style="border-color: var(--border)">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <div class="w-7 h-7 flex items-center justify-center" style="background: var(--gold)">
+          <span class="font-khmer text-white text-xs font-bold">ខ</span>
+        </div>
+        <span class="font-display font-bold" style="color: var(--text)">ខ្មែរ Chronicles</span>
+      </div>
+      <nav class="flex flex-wrap gap-6 text-sm font-body" style="color: var(--muted)">
+        <a href="index.html" class="hover:opacity-80">Home</a>
+        <a href="history.html" class="hover:opacity-80">History</a>
+        <a href="articles.html" class="hover:opacity-80">Articles</a>
+        <a href="timeline.html" class="hover:opacity-80">Timeline</a>
+        <a href="about.html" class="hover:opacity-80">About</a>
+      </nav>
+      <p class="font-mono text-xs" style="color: var(--muted)">
+        © 2026 ខ្មែរ Chronicles
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("dark-toggle");
+    const icon = document.getElementById("theme-icon");
+    const updateHeader = () => {
+      const h = document.getElementById("main-header");
+      h.style.background = document.documentElement.classList.contains("dark")
+        ? "rgba(17,13,6,0.88)"
+        : "rgba(250,248,243,0.88)";
+    };
+    const stored = localStorage.getItem("theme");
+    if (
+      stored === "dark" ||
+      (!stored && window.matchMedia("(prefers-color-scheme:dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+      icon.textContent = "☀";
+    }
+    updateHeader();
+    toggle.addEventListener("click", () => {
+      document.documentElement.classList.toggle("dark");
+      const isDark = document.documentElement.classList.contains("dark");
+      icon.textContent = isDark ? "☀" : "☽";
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+      updateHeader();
+    });
+    document.getElementById("menu-btn").addEventListener("click", () => {
+      document.getElementById("mobile-nav").classList.toggle("hidden");
+    });
+    const reveals = document.querySelectorAll(".reveal");
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) e.target.classList.add("visible");
+        });
+      },
+      { threshold: 0.1 },
+    );
+    reveals.forEach((r) => io.observe(r));
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+      document
+        .querySelectorAll(".era-tab")
+        .forEach((t) => t.classList.remove("active"));
+      document
+        .getElementById(
+          "tab-" +
+          id
+            .replace("-angkor", "")
+            .replace("post", "post")
+            .replace("pre", "pre")
+            .replace("colonial", "colonial")
+            .replace("independence", "ind")
+            .replace("modern", "modern"),
+        )
+        ?.classList.add("active");
+    }
+  </script>
+</body>
+
+</html>

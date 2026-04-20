@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — ខ្មែរ Chronicles | Khmer History Blog</title>
+  <meta name="description"
+    content="ខ្មែរ Chronicles is a dedicated Khmer history blog founded to preserve, share, and celebrate the extraordinary story of Cambodian civilization. Meet our team and mission." />
+  <meta name="keywords"
+    content="about Khmer Chronicles, Cambodia history blog team, Khmer history writers, Cambodia education" />
+  <link rel="canonical" href="https://khmerchronicles.com/about.html" />
+  <link rel="stylesheet" href="src/output.css" />
+  <link rel="stylesheet" href="src/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Noto+Serif+Khmer:wght@300;400;700;900&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Playfair Display"', "serif"],
+            body: ['"Cormorant Garamond"', "serif"],
+            khmer: ['"Noto Serif Khmer"', "serif"],
+            mono: ['"Space Mono"', "monospace"],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 right-0 z-50 border-b"
+    style="background: rgba(250, 248, 243, 0.88); border-color: var(--border)" id="main-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-9 h-9 flex items-center justify-center" style="background: var(--gold)">
+            <span class="font-khmer text-white text-lg font-bold">ខ</span>
+          </div>
+          <div>
+            <div class="font-display font-bold text-lg leading-none" style="color: var(--text)">
+              ខ្មែរ Chronicles
+            </div>
+            <div class="font-mono text-xs" style="color: var(--muted)">
+              KHMER HISTORY BLOG
+            </div>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-body" style="color: var(--muted)">
+          <a href="index.html" class="hover:opacity-80">Home</a>
+          <a href="history.html" class="hover:opacity-80">History</a>
+          <a href="articles.html" class="hover:opacity-80">Articles</a>
+          <a href="timeline.html" class="hover:opacity-80">Timeline</a>
+          <a href="about.html" class="font-semibold" style="color: var(--gold)">About</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <button id="dark-toggle" aria-label="Toggle dark mode" class="text-xl"
+            style="color: var(--gold); cursor: pointer">
+            <span id="theme-icon">☽</span>
+          </button>
+          <button id="menu-btn" class="md:hidden text-2xl" style="color: var(--text)">
+            ☰
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-nav" class="hidden md:hidden border-t px-4 py-4 space-y-3"
+      style="border-color: var(--border); background: var(--card-bg)">
+      <a href="index.html" class="block font-body text-sm py-1" style="color: var(--text)">Home</a>
+      <a href="history.html" class="block font-body text-sm py-1" style="color: var(--text)">History</a>
+      <a href="articles.html" class="block font-body text-sm py-1" style="color: var(--text)">Articles</a>
+      <a href="timeline.html" class="block font-body text-sm py-1" style="color: var(--text)">Timeline</a>
+      <a href="about.html" class="block font-body text-sm py-1" style="color: var(--gold)">About</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="pt-32 pb-16 px-4 sm:px-6 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-5">
+      <div style="
+            background: radial-gradient(
+              circle at 80% 50%,
+              #c8860a 0%,
+              transparent 60%
+            );
+            width: 100%;
+            height: 100%;
+          "></div>
+    </div>
+    <div class="max-w-4xl mx-auto relative hero-in">
+      <span class="badge mb-4 inline-block">Our Story</span>
+      <h1 class="font-display text-5xl sm:text-6xl font-bold leading-tight mt-3 mb-6" style="color: var(--text)">
+        We Chronicle<br /><em class="font-light" style="color: var(--gold)">What Others Forget</em>
+      </h1>
+      <div class="angkor-border max-w-md mb-8"></div>
+      <p class="font-body text-xl leading-relaxed max-w-2xl" style="color: var(--muted)">
+        ខ្មែរ Chronicles was born from a simple conviction: the story of the
+        Khmer people — 2,000 years of empire, resilience, tragedy, and renewal
+        — deserves to be told with the depth and care it warrants.
+      </p>
+    </div>
+  </section>
+
+  <!-- MISSION SECTION -->
+  <section class="py-16 px-4 sm:px-6 max-w-7xl mx-auto">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <div class="khmer-divider mb-6">
+          <span class="font-mono text-xs tracking-widest uppercase px-3">Our Mission</span>
+        </div>
+        <h2 class="font-display text-4xl font-bold mb-6 leading-tight" style="color: var(--text)">
+          History is Not the Past.<br />It is the Present, Remembered.
+        </h2>
+        <p class="font-body text-lg leading-relaxed mb-4" style="color: var(--muted)">
+          Cambodia is one of the world's most historically rich nations — and
+          one of the most misunderstood. Too often, Cambodian history in
+          English starts at the Khmer Rouge and ends with Angkor Wat. We
+          reject that reductiveness.
+        </p>
+        <p class="font-body text-lg leading-relaxed mb-6" style="color: var(--muted)">
+          Our mission is to fill in the gaps: the centuries between Angkor and
+          colonialism, the literary traditions that survived occupation, the
+          engineers who built the world's largest pre-industrial city, and the
+          survivors who rebuilt a society from nothing after 1979.
+        </p>
+        <div class="pull-quote text-xl">
+          ប្រវត្តិសាស្ត្ររបស់យើង គឺជាខ្លឹមសារ និងមហិមារបស់ជាតិខ្មែរ។<br />
+          <span class="font-body text-base">"Our history is the substance and glory of the Khmer
+            nation."</span>
+        </div>
+      </div>
+      <div class="reveal grid grid-cols-2 gap-4" style="transition-delay: 0.2s">
+        <div class="story-card p-6 col-span-2">
+          <div class="font-mono text-xs uppercase tracking-widest mb-2" style="color: var(--gold)">
+            What We Cover
+          </div>
+          <div class="grid grid-cols-2 gap-3 mt-3">
+            <div class="flex items-center gap-2">
+              <span style="color: var(--gold)">▸</span><span class="font-body text-sm"
+                style="color: var(--muted)">Ancient Kingdoms</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span style="color: var(--gold)">▸</span><span class="font-body text-sm"
+                style="color: var(--muted)">Temple Architecture</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span style="color: var(--gold)">▸</span><span class="font-body text-sm" style="color: var(--muted)">Royal
+                Dynasties</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span style="color: var(--gold)">▸</span><span class="font-body text-sm" style="color: var(--muted)">Khmer
+                Language</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span style="color: var(--gold)">▸</span><span class="font-body text-sm"
+                style="color: var(--muted)">Classical Arts</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span style="color: var(--gold)">▸</span><span class="font-body text-sm"
+                style="color: var(--muted)">Colonial History</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span style="color: var(--gold)">▸</span><span class="font-body text-sm"
+                style="color: var(--muted)">Modern Cambodia</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span style="color: var(--gold)">▸</span><span class="font-body text-sm"
+                style="color: var(--muted)">Archaeology</span>
+            </div>
+          </div>
+        </div>
+        <div class="story-card p-5 text-center">
+          <div class="font-display text-4xl font-bold mb-1" style="color: var(--gold)">
+            48
+          </div>
+          <div class="font-mono text-xs uppercase tracking-wider" style="color: var(--muted)">
+            Articles
+          </div>
+        </div>
+        <div class="story-card p-5 text-center">
+          <div class="font-display text-4xl font-bold mb-1" style="color: var(--gold)">
+            12
+          </div>
+          <div class="font-mono text-xs uppercase tracking-wider" style="color: var(--muted)">
+            Eras Covered
+          </div>
+        </div>
+        <div class="story-card p-5 text-center">
+          <div class="font-display text-4xl font-bold mb-1" style="color: var(--gold)">
+            2K
+          </div>
+          <div class="font-mono text-xs uppercase tracking-wider" style="color: var(--muted)">
+            Years of History
+          </div>
+        </div>
+        <div class="story-card p-5 text-center">
+          <div class="font-display text-4xl font-bold mb-1" style="color: var(--gold)">
+            6
+          </div>
+          <div class="font-mono text-xs uppercase tracking-wider" style="color: var(--muted)">
+            Writers
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESOURCES -->
+  <section class="py-16 px-4 sm:px-6" style="
+        background: linear-gradient(
+          135deg,
+          #1a0f00 0%,
+          #3d2200 50%,
+          #1a0f00 100%
+        );
+      ">
+    <div class="max-w-5xl mx-auto">
+      <div class="reveal text-center mb-12">
+        <div class="khmer-divider mb-4" style="--gold: rgba(200, 134, 10, 0.6)">
+          <span class="font-mono text-xs tracking-widest uppercase px-3" style="color: rgba(200, 134, 10, 0.8)">
+            Our Resources
+          </span>
+        </div>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold" style="color: #f5dfa0">
+          You can Learn More from this Resource.
+        </h2>
+      </div>
+      <div class="grid gap-6 reveal">
+
+        <a href="https://www.alonereaders.com/article/details/3688/angkor-wat-khmer-hydraulic-systems-and-the-engineering-genius-behind-the-temple-complex" target="_blank" class="p-6 border" style="border-color: rgba(200, 134, 10, 0.2)">
+          <h3 class="font-display text-lg font-semibold mb-2" style="color: #f5dfa0">
+            Alonereaders
+          </h3>
+        </a>
+
+        <a href="https://en.wikipedia.org/wiki/Khmer_Empire" target="_blank" class="p-6 border" style="border-color: rgba(200, 134, 10, 0.2)">
+          <h3 class="font-display text-lg font-semibold mb-2" style="color: #f5dfa0">
+            Wikipedia
+          </h3>
+        </a>
+
+        <a href="https://asiasociety.org/education/cambodia-historical-overview" target="_blank" class="p-6 border" style="border-color: rgba(200, 134, 10, 0.2)">
+          <h3 class="font-display text-lg font-semibold mb-2" style="color: #f5dfa0">
+            Asia Society
+          </h3>
+        </a>
+
+        <a href="https://www.britannica.com/place/Cambodia/History" target="_blank" class="p-6 border" style="border-color: rgba(200, 134, 10, 0.2)">
+          <h3 class="font-display text-lg font-semibold mb-2" style="color: #f5dfa0">
+            Britannica
+          </h3>
+        </a>
+
+        <a href="https://tourismcambodia.org/blog/about-cambodia/khmer-history-1546849762" target="_blank" class="p-6 border" style="border-color: rgba(200, 134, 10, 0.2)">
+          <h3 class="font-display text-lg font-semibold mb-2" style="color: #f5dfa0">
+            Tourism Cambodia
+          </h3>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DEVELOPER SECTION -->
+  <section class="py-16 px-4 sm:px-6 max-w-7xl mx-auto">
+    <div class="reveal mb-10">
+      <div class="khmer-divider mb-4">
+        <span class="font-mono text-xs tracking-widest uppercase px-3">Owner & Developer</span>
+      </div>
+    </div>
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-6 items-center">
+      <h2 class="font-display text-3xl sm:text-4xl font-bold" style="color: var(--text)">
+        The Developer Behind the Chronicles
+      </h2>
+      <div class="story-card p-6 reveal">
+        <div class="flex items-start gap-4 mb-4">
+          <img src="images/developer.jpg" alt="Kiry Ratanak" class="w-16 h-16 rounded-full object-cover" />
+          <div>
+            <h3 class="font-display text-lg font-semibold" style="color: var(--text)">
+              Kiry Ratanak
+            </h3>
+            <div class="font-mono text-xs mt-1" style="color: var(--gold)">
+              DEVELOPER
+            </div>
+          </div>
+        </div>
+        <p class="font-body text-sm leading-relaxed" style="color: var(--muted)">
+          Bachelors in IT from ISTAD. I learn in ISTAD since 2024. Learnt
+          about Khmer history from my grandparents , teacher in high school and research on browser. I have always been
+          fascinated by the rich cultural heritage of my country. Born in
+          Kratie, I have been learning in PPS High School.
+        </p>
+        <div class="mt-4 pt-4 border-t" style="border-color: var(--border)">
+          <div class="font-mono text-xs" style="color: var(--muted)">
+            Specialties: Angkor Empire, Epigraphy, Royal Dynasties
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES SECTION -->
+  <section class="py-16 px-4 sm:px-6" style="
+        background: linear-gradient(
+          135deg,
+          #1a0f00 0%,
+          #3d2200 50%,
+          #1a0f00 100%
+        );
+      ">
+    <div class="max-w-5xl mx-auto">
+      <div class="reveal text-center mb-12">
+        <div class="khmer-divider mb-4" style="--gold: rgba(200, 134, 10, 0.6)">
+          <span class="font-mono text-xs tracking-widest uppercase px-3" style="color: rgba(200, 134, 10, 0.8)">Our
+            Values</span>
+        </div>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold" style="color: #f5dfa0">
+          What We Stand For
+        </h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+        <div class="p-6 border" style="border-color: rgba(200, 134, 10, 0.2)">
+          <div class="value-icon mb-4 border-opacity-20"
+            style="border-color: rgba(200, 134, 10, 0.3); color: var(--gold)">
+            ✦
+          </div>
+          <h3 class="font-display text-lg font-semibold mb-2" style="color: #f5dfa0">
+            Scholarly Accuracy
+          </h3>
+          <p class="font-body text-sm" style="color: rgba(245, 223, 160, 0.6)">
+            Every claim we make is grounded in primary sources, peer-reviewed
+            scholarship, or direct interviews with experts. We cite our work
+            and welcome correction.
+          </p>
+        </div>
+        <div class="p-6 border" style="border-color: rgba(200, 134, 10, 0.2)">
+          <div class="value-icon mb-4" style="border-color: rgba(200, 134, 10, 0.3); color: var(--gold)">
+            ❋
+          </div>
+          <h3 class="font-display text-lg font-semibold mb-2" style="color: #f5dfa0">
+            Khmer Perspective
+          </h3>
+          <p class="font-body text-sm" style="color: rgba(245, 223, 160, 0.6)">
+            We center Cambodian voices and Cambodian scholarship. We resist
+            the framing of Khmer history through Western colonial or Cold War
+            lenses.
+          </p>
+        </div>
+        <div class="p-6 border" style="border-color: rgba(200, 134, 10, 0.2)">
+          <div class="value-icon mb-4" style="border-color: rgba(200, 134, 10, 0.3); color: var(--gold)">
+            ◈
+          </div>
+          <h3 class="font-display text-lg font-semibold mb-2" style="color: #f5dfa0">
+            Accessible Writing
+          </h3>
+          <p class="font-body text-sm" style="color: rgba(245, 223, 160, 0.6)">
+            History shouldn't require a PhD to enjoy. We write for the curious
+            general reader — detailed, context-rich, but always readable and
+            human.
+          </p>
+        </div>
+        <div class="p-6 border" style="border-color: rgba(200, 134, 10, 0.2)">
+          <div class="value-icon mb-4" style="border-color: rgba(200, 134, 10, 0.3); color: var(--gold)">
+            ⬡
+          </div>
+          <h3 class="font-display text-lg font-semibold mb-2" style="color: #f5dfa0">
+            Cultural Respect
+          </h3>
+          <p class="font-body text-sm" style="color: rgba(245, 223, 160, 0.6)">
+            We treat every aspect of Khmer culture — from temple rituals to
+            funeral traditions to cuisine — with the dignity and seriousness
+            they deserve.
+          </p>
+        </div>
+        <div class="p-6 border" style="border-color: rgba(200, 134, 10, 0.2)">
+          <div class="value-icon mb-4" style="border-color: rgba(200, 134, 10, 0.3); color: var(--gold)">
+            ⌘
+          </div>
+          <h3 class="font-display text-lg font-semibold mb-2" style="color: #f5dfa0">
+            Memory & Justice
+          </h3>
+          <p class="font-body text-sm" style="color: rgba(245, 223, 160, 0.6)">
+            The Khmer Rouge genocide must be remembered, documented, and
+            understood. We cover it with care, with testimony, and with a
+            commitment to justice for survivors and victims.
+          </p>
+        </div>
+        <div class="p-6 border" style="border-color: rgba(200, 134, 10, 0.2)">
+          <div class="value-icon mb-4" style="border-color: rgba(200, 134, 10, 0.3); color: var(--gold)">
+            ✿
+          </div>
+          <h3 class="font-display text-lg font-semibold mb-2" style="color: #f5dfa0">
+            Open Access
+          </h3>
+          <p class="font-body text-sm" style="color: rgba(245, 223, 160, 0.6)">
+            All our articles are free. We believe knowledge about Cambodia's
+            history should be accessible to every Cambodian, regardless of
+            their economic circumstance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="py-20 px-4 sm:px-6 max-w-4xl mx-auto">
+    <div class="reveal">
+      <div class="khmer-divider mb-8">
+        <span class="font-mono text-xs tracking-widest uppercase px-3">Get In Touch</span>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-8">
+        <div>
+          <h2 class="font-display text-3xl font-bold mb-4" style="color: var(--text)">
+            Write for Us or Reach Out
+          </h2>
+          <p class="font-body text-lg leading-relaxed mb-6" style="color: var(--muted)">
+            We welcome contributions from historians, archaeologists,
+            teachers, and passionate learners. If you have a story to tell
+            about Khmer history, we want to hear it.
+          </p>
+          <div class="space-y-3">
+            <div class="flex items-center gap-3">
+              <span style="color: var(--gold)">✉</span>
+              <span class="font-body" style="color: var(--muted)">kiryratanak71@gmail.com</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span style="color: var(--gold)">✦</span>
+              <span class="font-body" style="color: var(--muted)">submissions@khmerchronicles.com</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span style="color: var(--gold)">◈</span>
+              <span class="font-body" style="color: var(--muted)">Phnom Penh, Cambodia</span>
+            </div>
+          </div>
+        </div>
+        <form class="space-y-4" onsubmit="handleContact(event)">
+          <input type="text" placeholder="Your Name" required
+            class="w-full px-4 py-3 font-body text-base border focus:outline-none" style="
+                background: var(--card-bg);
+                border-color: var(--border);
+                color: var(--text);
+              " />
+          <input type="email" placeholder="your@email.com" required
+            class="w-full px-4 py-3 font-body text-base border focus:outline-none" style="
+                background: var(--card-bg);
+                border-color: var(--border);
+                color: var(--text);
+              " />
+          <select class="w-full px-4 py-3 font-mono text-xs border focus:outline-none" style="
+                background: var(--card-bg);
+                border-color: var(--border);
+                color: var(--muted);
+              ">
+            <option>General Inquiry</option>
+            <option>Submit an Article</option>
+            <option>Research Collaboration</option>
+            <option>Media & Press</option>
+          </select>
+          <textarea rows="4" placeholder="Your message..."
+            class="w-full px-4 py-3 font-body text-base border focus:outline-none resize-none" style="
+                background: var(--card-bg);
+                border-color: var(--border);
+                color: var(--text);
+              "></textarea>
+          <button type="submit"
+            class="w-full px-6 py-3 font-mono text-xs font-bold uppercase tracking-widest transition-opacity hover:opacity-80"
+            style="background: var(--gold); color: #fff">
+            Send Message
+          </button>
+          <div id="contact-msg" class="hidden font-mono text-xs text-center pt-2" style="color: var(--gold)">
+            ✓ Message sent — we'll respond within 48 hours.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t mt-10 py-12 px-4 sm:px-6" style="border-color: var(--border)">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <div class="w-7 h-7 flex items-center justify-center" style="background: var(--gold)">
+          <span class="font-khmer text-white text-xs font-bold">ខ</span>
+        </div>
+        <span class="font-display font-bold" style="color: var(--text)">ខ្មែរ Chronicles</span>
+      </div>
+      <nav class="flex flex-wrap gap-6 text-sm font-body" style="color: var(--muted)">
+        <a href="index.html" class="hover:opacity-80">Home</a><a href="history.html"
+          class="hover:opacity-80">History</a><a href="articles.html" class="hover:opacity-80">Articles</a><a
+          href="timeline.html" class="hover:opacity-80">Timeline</a><a href="about.html"
+          class="hover:opacity-80">About</a>
+      </nav>
+      <p class="font-mono text-xs" style="color: var(--muted)">
+        © 2026 ខ្មែរ Chronicles
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("dark-toggle");
+    const icon = document.getElementById("theme-icon");
+    const updateHeader = () => {
+      const h = document.getElementById("main-header");
+      h.style.background = document.documentElement.classList.contains("dark")
+        ? "rgba(17,13,6,0.88)"
+        : "rgba(250,248,243,0.88)";
+    };
+    const stored = localStorage.getItem("theme");
+    if (
+      stored === "dark" ||
+      (!stored && window.matchMedia("(prefers-color-scheme:dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+      icon.textContent = "☀";
+    }
+    updateHeader();
+    toggle.addEventListener("click", () => {
+      document.documentElement.classList.toggle("dark");
+      const isDark = document.documentElement.classList.contains("dark");
+      icon.textContent = isDark ? "☀" : "☽";
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+      updateHeader();
+    });
+    document.getElementById("menu-btn").addEventListener("click", () => {
+      document.getElementById("mobile-nav").classList.toggle("hidden");
+    });
+    const reveals = document.querySelectorAll(".reveal");
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) e.target.classList.add("visible");
+        });
+      },
+      { threshold: 0.1 },
+    );
+    reveals.forEach((r) => io.observe(r));
+    function handleContact(e) {
+      e.preventDefault();
+      document.getElementById("contact-msg").classList.remove("hidden");
+      e.target.reset();
+    }
+  </script>
+</body>
+
+</html>
