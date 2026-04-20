@@ -42,7 +42,7 @@ This blog project aims to document and preserve Khmer history, covering topics f
 
 - HTML
 - CSS (Flexbox/Grid for layout)
-- [Add if using: Tailwind CSS]
+- Tailwind CSS
 
 ## 📦 Installation
 
